@@ -1,0 +1,11 @@
+componnentMount //First time
+
+useEffect(()=>{
+console.log("Hello")
+},[])
+
+componedidUpdate //on Update
+
+useEffect(()=>{
+console.log("Hello")
+},[state])
