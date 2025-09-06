@@ -1,7 +1,9 @@
 package DSA;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /*
 Question: Longest Substring Without Repeating Characters
@@ -26,6 +28,7 @@ Explanation: The answer is "wke".
 
 public class LongestSubstringWithoutRepeating {
 
+    //Below code using hashmap
     public static int lengthOfLongestSubstring(String s) {
         Map<Character, Integer> map = new HashMap<>();
         int start = 0;
@@ -46,9 +49,30 @@ public class LongestSubstringWithoutRepeating {
         return maxLength;
     }
 
+    //Using hashSet
+
+    public static int usingSet(String s){
+        int start =0;
+        int maxLength=0;
+
+        Set<Character> set = new HashSet<>();
+        for(int end = 0; end<s.length();end ++){
+            char c = s.charAt(end);
+
+            while(set.contains(c)){
+                set.remove(s.charAt(start));
+                start++;
+            }
+            set.add(c);
+            maxLength = Math.max(maxLength,end - start+1);
+        }
+
+        return maxLength;
+    }
+
     public static void main(String[] args) {
         System.out.println(lengthOfLongestSubstring("abcabcbb")); // 3 ("abc")
-        System.out.println(lengthOfLongestSubstring("bbbbb"));    // 1 ("b")
+        System.out.println(usingSet("bbbbb"));    // 1 ("b")
         System.out.println(lengthOfLongestSubstring("pwwkew"));   // 3 ("wke")
         System.out.println(lengthOfLongestSubstring(""));         // 0 (empty string)
     }
