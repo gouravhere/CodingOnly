@@ -23,7 +23,7 @@ Explanation: The answer is "b".
 Example 3:
 Input: s = "pwwkew"
 Output: 3
-Explanation: The answer is "wke".
+Explanation: The answer is "wke"..
  */
 
 public class LongestSubstringWithoutRepeating {
