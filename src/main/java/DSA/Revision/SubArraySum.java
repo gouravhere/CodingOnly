@@ -1,4 +1,8 @@
 package DSA.Revision;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /*
 📌 Problem:
 Given an array of integers and an integer k, return the total number of continuous subarrays whose sum equals to k.
@@ -33,8 +37,20 @@ public class SubArraySum {
     }
 
     public static int subArraySum(int [] nums , int k){
-        int subArray =0;
+        int currSum = 0;
+        int count = 0;
+        Map<Integer, Integer> prefixSumMap = new HashMap<>();
+        for (int num : nums) {
+            currSum += num;
 
-        return subArray;
+            // check if there is a prefix sum that makes subarray sum = k
+            if (prefixSumMap.containsKey(currSum - k)) {
+                count += prefixSumMap.get(currSum - k);
+            }
+
+            // update prefix sum count
+            prefixSumMap.put(currSum, prefixSumMap.getOrDefault(currSum, 0) + 1);
+        }
+        return count;
     }
 }
