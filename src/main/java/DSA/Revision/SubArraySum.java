@@ -26,7 +26,7 @@ For each index, check if (currentSum - k) exists in the map.
 
 If yes, it means there’s a subarray ending here with sum k.
 
-Store counts of prefix sums in the map.
+Store counts of prefix sums in the map
  */
 public class SubArraySum {
 
