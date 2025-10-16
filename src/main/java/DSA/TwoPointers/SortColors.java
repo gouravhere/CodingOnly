@@ -25,21 +25,21 @@ high → for 2s
  */
 public class SortColors {
     public static void main (String [] args){
-        int [] nums = {2,0,2,1,1,0};
+        int [] nums = {2,0,1};
         int low =0;
         int mid = 0;
         int high = nums.length-1;
-        while(mid<high){
+        while(mid<=high){
             if(nums[mid]==2){
-                int temp = nums[low];
-                nums[low]=nums[high];
+                int temp = nums[mid];
+                nums[mid] = nums[high];
                 nums[high] = temp;
                 high--;
             }
             else if (nums[mid]==0){
-                int temp1 = nums[mid];
-                nums[low]=nums[mid];
-                nums[mid] = temp1;
+                int temp = nums[low];
+                nums[low] = nums[mid];
+                nums[mid] = temp;
                 low++;
                 mid++;
             }
