@@ -7,7 +7,7 @@ Example:
 Input: height = [1,8,6,2,5,4,8,3,7]
 Output: 49
 Explanation: The container is between lines at index 1 and 8:
-min(8,7) * (8 - 1) = 7 * 7 = 49..
+min(8,7) * (8 - 1) = 7 * 7 = 49.
  */
 public class ContainerWithMostWater {
     public static void main(String[] args) {
