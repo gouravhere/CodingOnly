@@ -3,7 +3,7 @@ package DSA.TwoPointers;
 You are given an array height[] where each element represents the height of a vertical line on the x-axis.
 Find two lines such that together with the x-axis, they form a container that holds the most water.
 
-Example:-
+Example:-.
 Input: height = [1,8,6,2,5,4,8,3,7]
 Output: 49
 Explanation: The container is between lines at index 1 and 8:
