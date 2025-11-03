@@ -7,7 +7,7 @@ import java.util.Map;
 Find the length of the longest substring without repeating characters.
 
 Example:
-s = "abcabcbb" → answer = 3 (substring "abc")
+s = "abcabcbb" → answer =  3 (substring "abc")
  */
 public class LongestSubstring {
     public static void main(String[] args) {
