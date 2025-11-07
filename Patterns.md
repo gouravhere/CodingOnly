@@ -1,9 +1,3 @@
-# 🚀 55-Day DSA Pattern Recognition Cheat Sheet (Java Focus)
-
-This sheet is designed to help a 3+ year experienced developer quickly identify the core pattern behind an interview problem, ensuring an optimal $O(N)$ or $O(N \log N)$ solution.
-
----
-
 ## 💡 Pattern Identification Table
 
 | Pattern | Java DS/Concept | Identification Cues (What the Question Asks) |
@@ -40,4 +34,4 @@ As a Java developer, these are the essential tools that map directly to the patt
 * **Pattern Use:** **Tree/Graph BFS (as a Queue).**
 * **Function:** Implement the `Queue` interface efficiently using `add()` and `poll()`.
 
----
+
