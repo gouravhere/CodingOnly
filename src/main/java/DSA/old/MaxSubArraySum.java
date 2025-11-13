@@ -1,4 +1,4 @@
-package DSA;
+package DSA.old;
 /*
 Problem 1: Kadane’s Algorithm (Maximum Subarray Sum)
 
