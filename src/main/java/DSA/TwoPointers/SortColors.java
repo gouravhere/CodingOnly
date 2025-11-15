@@ -21,7 +21,7 @@ Constraint: You cannot use a library sort function.
 Try using three pointers — low, mid, high.
 low → for 0s
 mid → for current element
-high → for 2s
+high → for 2 s
  */
 public class SortColors {
     public static void main (String [] args){
