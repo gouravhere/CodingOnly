@@ -10,6 +10,10 @@ Return the squares in sorted order:
  */
 public class SSA {
     public static void main (String [] args){
+        int [] arr = {-5, -3, -2, -1, 4, 6};
+        int start =0;
+        int end = arr.length-1;
+
 
     }
 }
