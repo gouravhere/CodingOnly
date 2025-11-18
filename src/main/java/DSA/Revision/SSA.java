@@ -2,6 +2,8 @@ package DSA.Revision;
 
 import java.util.Arrays;
 
+import static java.lang.Math.abs;
+
 /*
 Problem: Squares of a Sorted Array (Two Pointers)
 Given a sorted array with negative and positive numbers:
@@ -21,18 +23,19 @@ public class SSA {
         int index = nums.length - 1;
 
         while (left <= right) {
-
-            // TODO: compute leftSquare
-            // TODO: compute rightSquare
-
-            // TODO: compare leftSquare & rightSquare
-            // - put larger one at result[index]
-            // - move left or right pointer
-            // - index--;
-
+            int leftSquare = abs(nums[left]*nums[left]);
+            int rightSquare = abs(nums[right]*nums[right]);
+            if(leftSquare>rightSquare){
+                result[index]=leftSquare;
+                left++;
+            }
+            else{
+                result[index]=rightSquare;
+                right--;
+            }
+            index--;
         }
 
-        // print result
         System.out.println(Arrays.toString(result));
 
 
