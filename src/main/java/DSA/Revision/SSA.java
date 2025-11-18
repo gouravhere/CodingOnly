@@ -23,8 +23,8 @@ public class SSA {
         int index = nums.length - 1;
 
         while (left <= right) {
-            int leftSquare = abs(nums[left]*nums[left]);
-            int rightSquare = abs(nums[right]*nums[right]);
+            int leftSquare = nums[left]*nums[left];
+            int rightSquare = nums[right]*nums[right];
             if(leftSquare>rightSquare){
                 result[index]=leftSquare;
                 left++;
