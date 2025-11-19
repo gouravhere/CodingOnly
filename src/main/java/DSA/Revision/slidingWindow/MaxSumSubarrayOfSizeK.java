@@ -12,4 +12,8 @@ Example:
 [5, 1, 3] → sum = 9
  */
 public class MaxSumSubarrayOfSizeK {
+
+    public static void main (String [] args){
+        int [] arr = {2, 1, 5, 1, 3, 2};
+    }
 }
