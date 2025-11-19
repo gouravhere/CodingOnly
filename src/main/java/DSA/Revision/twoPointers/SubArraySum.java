@@ -1,4 +1,4 @@
-package DSA.Revision;
+package DSA.Revision.twoPointers;
 
 import java.util.HashMap;
 import java.util.Map;
