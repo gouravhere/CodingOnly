@@ -7,6 +7,8 @@ public class ReturnLongestSubstr {
     }
 
     private static String LongestSubstring(String s) {
+        String str="";
+        int left =0;
 
         return str;
     }
