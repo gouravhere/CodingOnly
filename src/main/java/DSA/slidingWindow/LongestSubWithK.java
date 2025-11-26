@@ -7,17 +7,34 @@ public class LongestSubWithK {
     public static void main(String[] args){
         String s = "eceba";
         int k = 2;
-        System.out.println(LongestSubstring(s,k));
+        System.out.println(longestKDistinct(s,k));
     }
-    private static String LongestSubstring(String s,int k) {
-        int left =0;
-        int startIndexOfMax = 0;
-        int maxLen=0;
-        Map<Character,Integer> freq = new HashMap<>();
-        for(int right =0; right<s.length();right++){
+    public static int longestKDistinct(String s, int k) {
+        int left = 0;
+        int maxLen = 0;
+
+        Map<Character, Integer> map = new HashMap<>();
+
+        for (int right = 0; right < s.length(); right++) {
+
             char ch = s.charAt(right);
 
+            map.put(ch,right);
+            while (map.size() > k) {
+                char leftChar = s.charAt(left);
+                map.put(leftChar, map.get(leftChar) - 1);
+
+                if (map.get(leftChar) == 0) {
+                    map.remove(leftChar);
+                }
+
+                left++;
+            }
+
+            maxLen = Math.max(maxLen,right-left+1);
         }
-        return s;
+
+        return maxLen;
     }
+
 }
