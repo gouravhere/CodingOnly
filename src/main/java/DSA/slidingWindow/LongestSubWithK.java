@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class LongestSubWithK {
     public static void main(String[] args){
-        String s = "eceba";
+        String s = "ecebad";
         int k = 2;
         System.out.println(longestKDistinct(s,k));
     }
