@@ -17,7 +17,7 @@ Each array of solar panels contains at least 1 and no more than 50 panels,
     public static void main (String [] args){
         int [] arr = {2, -3, 1, 0, -5,0,1,-2,-2,-3};
       //  int [] arr ={0};
-        System.out.printf(solution(arr));
+        System.out.println(solution(arr));
     }
 
     public static int solution(int [] arr){
