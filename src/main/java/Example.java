@@ -1,5 +1,5 @@
 public class Example {
-//tesdt
+
     /*
     Write a function solution(xs) that takes a list of integers representing the power output levels
     of each panel in an array, and returns the maximum product of some non-empty subset of those numbers.
