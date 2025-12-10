@@ -21,6 +21,7 @@ k = 1
  */
 public class LongestRepeatingCharacterReplacement {
     public static void main (String [] args){
-
+    String s = "AABABBA";
+    int k = 1;
     }
 }
