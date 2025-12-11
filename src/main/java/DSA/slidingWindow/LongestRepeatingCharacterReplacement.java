@@ -24,4 +24,8 @@ public class LongestRepeatingCharacterReplacement {
     String s = "AABABBA";
     int k = 1;
     }
+    private static String result(int k , String s){
+        String longestRepChar="";
+        return longestRepChar;
+    }
 }
