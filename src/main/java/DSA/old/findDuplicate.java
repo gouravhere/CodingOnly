@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /*
-Week 1 problem: Find  duplicates.
+Week 1 problem: Find duplicates.
 
 Here’s the problem statement:
 
