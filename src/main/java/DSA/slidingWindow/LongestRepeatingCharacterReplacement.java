@@ -29,15 +29,23 @@ public class LongestRepeatingCharacterReplacement {
     public static void main (String [] args){
     String s = "AABABBA";
     int k = 1;
+        System.out.printf(result(k,s));
     }
     private static String result(int k , String s){
         String longestRepChar="";
         Map<Character,Integer> map = new HashMap<>();
-        int left=0;
-        for (int right =0; right<s.length();right++){
-            char c = s.charAt(right);
+        int windowLength=0;
+        int maxFrequency=0;
+            while (windowLength - maxFrequency <= k){
+                char c = s.charAt(windowLength);
+                map.put(c,windowLength);
+                if (map.containsKey(c)){
+                    windowLength++;
+                    maxFrequency++;
+                }
+            }
 
-        }
+
         return longestRepChar;
     }
 }
