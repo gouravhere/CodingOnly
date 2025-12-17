@@ -39,7 +39,17 @@ public class LongestRepeatingCharacterReplacement {
         Map<Character, Integer> freq = new HashMap<>();
 
         // sliding window loop will go here
-
+        for (int right = 0; right < s.length(); right++) {
+            char ch = s.charAt(right);
+            freq.put(ch, freq.getOrDefault(ch, 0) + 1);
+            maxFrequency = Math.max(maxFrequency, freq.get(ch));
+            while ((right - left + 1) - maxFrequency > k) {
+                char leftChar = s.charAt(left);
+                freq.put(leftChar, freq.get(leftChar) - 1);
+                left++;
+            }
+            maxLen = Math.max(maxLen, right - left + 1);
+        }
         return maxLen;
     }
 }
