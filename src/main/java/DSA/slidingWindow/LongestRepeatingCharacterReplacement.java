@@ -1,4 +1,8 @@
 package DSA.slidingWindow;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /*
 ⭐ Problem: Longest Repeating Character Replacement
 🔥 What you are allowed to do:
@@ -28,7 +32,12 @@ public class LongestRepeatingCharacterReplacement {
     }
     private static String result(int k , String s){
         String longestRepChar="";
+        Map<Character,Integer> map = new HashMap<>();
+        int left=0;
+        for (int right =0; right<s.length();right++){
+            char c = s.charAt(right);
 
+        }
         return longestRepChar;
     }
 }
