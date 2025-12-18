@@ -27,8 +27,8 @@ k = 1
  */
 public class LongestRepeatingCharacterReplacement {
     public static void main (String [] args){
-    String s = "AABABBA";
-    int k = 1;
+    String s = "AABABBAA";
+    int k = 2;
         System.out.printf(String.valueOf(characterReplacement(s,k)));
     }
     public static int characterReplacement(String s, int k) {
