@@ -21,7 +21,7 @@ Your goal:
 
 🎯 Simple Example
 Input:
-s = "AABABBA"
+s = "AABABBTA"
 k = 1
 
  */
